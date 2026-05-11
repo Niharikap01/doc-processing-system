@@ -41,7 +41,15 @@ A full-stack real-time document processing platform built using FastAPI, React, 
 # Architecture
 
 Frontend → FastAPI → Celery Worker → Redis → PostgreSQL
+# Real-Time Processing Flow
 
+1. User uploads PDF document
+2. FastAPI stores document metadata
+3. Background processing starts using Celery
+4. Redis Pub/Sub streams live events
+5. WebSocket pushes real-time updates to frontend
+6. Extracted data is stored in PostgreSQL
+7. User can review, edit, finalize, and export results
 ---
 
 # Screenshots
