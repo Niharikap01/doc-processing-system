@@ -28,8 +28,8 @@ A full-stack real-time document processing platform built using FastAPI, React, 
 - Redis
 - Celery
 - WebSockets
+- Docker
 - PyMuPDF (fitz)
-
 ## Frontend
 - React
 - TypeScript
@@ -50,20 +50,6 @@ Frontend → FastAPI → Celery Worker → Redis → PostgreSQL
 5. WebSocket pushes real-time updates to frontend
 6. Extracted data is stored in PostgreSQL
 7. User can review, edit, finalize, and export results
----
-
-# Screenshots
-
-## Upload Page
-
-![Upload](screenshots/upload.png)
-
----
-
-## Document Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
 ---
 
 # Installation
@@ -98,12 +84,11 @@ npm run dev
 
 # Future Improvements
 
-- OCR support
+- OCR support for scanned documents
 - AI summarization
 - Authentication system
 - Role-based access
 - Cloud deployment
-- Docker support
 
 ---
 
